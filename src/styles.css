@@ -88,52 +88,14 @@ video {
     font: inherit;
 }
 
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section,
-a {
-    display: block;
-}
-
+/* Start */
 body {
     line-height: 1;
     width: 100%;
     font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    align-self: center;
 }
 
-ol,
-ul {
-    list-style: none;
-}
-
-blockquote,
-q {
-    quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-/* Start */
 :root {
     --clr--primary: #167D7F;
     --clr--secondary: #98D7C2;
@@ -165,6 +127,7 @@ table {
 }
 
 .btn {
+    display: inline-block;
     border-radius: 4px;
     border: 2px solid var(--clr--primary);
     background-color: white;
@@ -172,7 +135,7 @@ table {
     transition: 0.3s ease-in-out;
     padding: 10px 30px;
     margin: 20px 150px;
-    word-wrap: initial;
+    word-wrap: nowrap;
 }
 
 .btn:focus,
@@ -220,10 +183,6 @@ img {
     max-width: 50%;
     margin: 0 auto;
     padding: 20px;
-}
-
-.blog .flexPics {
-    max-width: 500px;
 }
 
 .bck {
@@ -291,4 +250,9 @@ blockquote:active {
 .blog {
     text-align: center;
     padding: 10px;
+}
+
+.card {
+    border: 3px solid var(--clr--accent);
+    justify-items: center;
 }
